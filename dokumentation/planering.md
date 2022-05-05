@@ -15,7 +15,8 @@ Skapa
 
 
 ## Vecka 18
-
+idag har jag lagt in texten och 2 bilder börjat letta i koden för ändra färger
+nästa gång ska jag fixa färgerna göra sidan intresant samt en font
 
 
 ## Vecka 19 NP
