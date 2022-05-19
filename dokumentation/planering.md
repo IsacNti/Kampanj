@@ -23,7 +23,7 @@ nästa gång ska jag fixa färgerna göra sidan intresant samt en font
 
 
 ## Vecka 20
-
+fixa fonts för rubriker och p element validera på wawe och validtator.nu
 
 
 ## Vecka 21 Kristi himmels
