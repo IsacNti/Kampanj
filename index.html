@@ -1,55 +1,159 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-        .container {
-            margin-top: 5rem;
-            width: 100%;
-        }
-        p {
-            margin-bottom: 3rem;
-        }
-        .swatches {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: grid;
-            gap: 1rem;
-            grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
 
-        }
-        .swatches li {
-            aspect-ratio: 1;
-            display: grid;
-            place-content: center;
-            border-radius: .5rem;
-            font-size: 3rem;
-            text-align: center;
-            border: 1px solid var(--color-shadow);
-        }
-    </style>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/theme-1.css" /> <!-- prova att ta bort -->
+    <title>Kampanj</title>
 </head>
+
 <body>
+    <!-- https://jensnti.github.io/wu-exempel/hamburgermeny/ -->
+    <nav class="navbar">
+        <a class="brand" href="#">Laddad</a>
+        <button class="navbar__toggle">
+            <span class="material-icons"> Meny </span>
+        </button>
+        <div class="navbar__collapse">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Hem</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#intro">Intro</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header class="hero">
+        <div class="container">
+            <h1>Gamla goda tiderna.</h1>
+            <p>
+                Kommer ni ihåg hur det var förr då man pratade med
+                varandra. Man var rak på sak och var inte rädd att
+                säga ord eftersom ingen hade laddat orden. Idag måste
+                man nästan vara rädd för att säga vissa fraser. Ord som
+                har funnits länge har idag nästan klassificerats
+                som något man inte ska få säga för att dem låter
+                som diskriminerande uttryck. Men varför
+                ska det vara så vi har väl yttrandefrihet?
+                Vi ska väl få säga vad vi vill. Sluta göra orden
+                laddade så det låter som hat.
+            </p>
+            <!-- https://jensnti.github.io/wu-exempel/knappar/ -->
+            <div class="cta">
+                <a href="#cta" class="btn">Call to action</a>
+            </div>
+        </div>
+        <!-- kolla css vad denna gör, ligger över hela hero för att texten ska gå att läsa, kontrast -->
+        <div class="overlay"></div>
+    </header>
+    <!-- https://jensnti.github.io/wu-exempel/media-queries/ -->
     <main class="container">
-        <h1>Bygg din kampanj</h1>
-        <p>Välj en mall/tema kopiera html filen, skapa en tema-dittnamn.css och länka den.</p>
-        <ul class="swatches">
-            <li>
-                <a href="theme-no.html">Utan tema</a>
-            </li>
-            <li>
-                <a href="theme-1.html">Tema 1</a>
-            </li>
-            <li>
-                <a href="theme-2.html">Tema 2</a>
-            </li>
-        </ul>
+        <section class="intro" id="intro">
+            <h2>De gamla orden.</h2>
+                <p>
+                    Dem orden man använde de kan möjligtvis låta som ett dåligt
+                    ord men det betyder inte att det är menat att vara det. Orden
+                    måste sluta missförstås bara för dem liknar något annat exempel
+                    på ett sådant ord är att kanske beskriva någon som asiat.
+                    det är bara en beskrivning på en person det betyder inte att
+                    jag menar nåt illa med det.
+                </p>
+
+                <h3>Hur är det rättvist?</h3>
+                <p>
+                    Att tvinga andra att behöva följa vad andra tycker genom att begränsa
+                    vad dem får säga har man verkligen en yttrandefrihet då för du blir
+                    tvingad att ta bort vissa ord för andra personer laddar orden så de
+                    ska verka dåliga. Ett sådant tillfälle kan vara då man pratar om
+                    t.e.x. Invandring vilket om du skulle säga att invandrarna inte kommer
+                    in i samhället lätt och de hamnar i brottsliga sammanhang. Så kommer
+                    du bli kallad rasist.
+                </p>
+                <p>
+
+                </p>
+        </section>
+        <section class="about">
+            <div>
+                <h2>Rasism eller okunnig?</h2>
+                <p>
+                    Nu skulle det kunna va så att orden faktiskt liknar något man anser är
+                    ett dåligt ord som tex N-ordet men det betyder inte att de måste betyda
+                    det. Kan betyda något helt annat t.e.x. N-boll som ska betyda chokladboll
+                    och användes av många gamla. Dem här orden laddas bara upp i onödan då
+                    det egentligen inte har nåt med tex N-ordet att göra. Det kan leda till
+                    att många som säger det blir kallad rasist och där har som du blivit
+                    begränsad till vad du får säga för annars är du en rasist.
+                </p>
+            </div>
+            <div>
+                <img src="img/panel-g0047b0544_640.png" alt="Pratstop">
+            </div>
+        </section>
+        <section class="intro">
+            <h3>Frihet?</h3>
+            <p>
+                yttrandefrihet vad är det? Enligt © NE Nationalencyklopedin AB
+                är det att få uttala sig i skrift eller bild samt uttrycka sina
+                åsikter, känslor och tankar. Är det så idag att jag får göra det
+                nej jag får inte det eftersom folk har laddat dem och anser att
+                dem är tex är rasistiska. Det leder till att jag som person blir
+                rädd att uttrycka mig eftersom jag känner mig inte som en rasist
+                och jag vill inte bli kallad rasist vid en sådant tillfälle.
+            </p>
+            <p>
+                Vissa fraser kan låta som dåliga ord. Men de betyder inte att dom
+                är menad att vara det. Man måste kunna ta vissa ord som låter
+                dåliga med en nypa salt och ta reda på vad dem faktiskt betyder
+                istället för att kritisera de direkt och ladda dem och säga de är
+                dåliga. Nu tänker jag upprepa en sak igen för sista gången. Sluta göra
+                orden laddade så det låter som hat.
+            </p>
+        </section>
     </main>
+            <footer>
+           <hr>
+            <div class="container">
+                <ul>
+                    <li>
+                        Photo by
+                        <a
+                            href="https://pixabay.com/sv/vectors/batterier-landning-ikoner-ange-1379208/"
+                            >michaljamro</a
+                        >
+                        on
+                        <a
+                            href="https://pixabay.com/sv/users/michaljamro-861175/"
+                            >Pixabay</a
+                        >
+                    </li>
+                    <li>
+                        Photo by
+                        <a
+                            href="https://pixabay.com/sv/vectors/panel-f%c3%b6rbud-att-tala-f%c3%b6rbjudet-5069778/"
+                            >gdw96</a
+                        >
+                        on
+                        <a
+                            href="https://pixabay.com/sv/users/gdw96-7241095/"
+                            >Pixabay</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+    <script defer src="js/menu.js"></script>
 </body>
+
 </html>

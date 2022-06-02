@@ -3,9 +3,16 @@
     --color-primary: hsl(20deg 40% 53%);
     --color-secondary: hsl(344deg 45% 13%);
 
-    --font-headline: serif;
+    --font-family: 'Lobster', cursive;
+    --font-sans: 'Nunito Sans', sans-serif;
 }
 
+
+
+ul{
+    color: white;
+
+}
 a:hover {
     color: var(--color-secondary);
 }
@@ -14,8 +21,12 @@ footer a {
     color: var(--color-light);
 }
 
+p {
+    font-family: var(--font-sans);
+}
+
 h1, h2, h3 {
-    font-family: var(--font-headline);
+    font-family: var(--font-family);
 }
 
 .navbar {
@@ -25,7 +36,7 @@ h1, h2, h3 {
 }
 
 .hero {
-    background-image: url(../img/goh-rhy-yan-CCxWLAx0qmk-unsplash.jpg);
+    background-image: url(../img/batteries-g702bf55f1_1280.png);
     background-size: cover;
     background-position: left top;
     position: relative;

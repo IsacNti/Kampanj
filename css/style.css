@@ -5,7 +5,8 @@
     --color-primary: hsl(347, 83%, 56%);
     --color-secondary: hsl(275, 100%, 25%);
 
-    --font-sans: "Merriweather Sans", sans-serif;
+    --font-family: 'Lobster', cursive;
+    --font-life: 'Nunito Sans', sans-serif;
 }
 
 a {
@@ -96,17 +97,18 @@ body {
 
     line-height: 1.5;
     font-size: 1rem;
-    font-family: var(--font-sans);
+    font-family: var(--font-family);
 }
 .container {
     margin-left: auto;
     margin-right: auto;
     padding-left: 1rem;
     padding-right: 1rem;
+    
 }
 
 .container:nth-child(2) {
-    background-color: var(--color-shadow);
+    background-color: var(--color-dark);
 }
 
 .container > section {
